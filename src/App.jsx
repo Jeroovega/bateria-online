@@ -194,7 +194,7 @@ function App() {
       tabIndex="0"
       className="bg-[#280606] h-screen">
       <main className="flex flex-col items-center justify-center h-full">
-        <div className={`${prendido ? "bg-[#4d1616]" : "bg-[#211414]"} text-white flex items-center justify-center h-70 rounded-xl shadow-2xl shadow-zinc-950`}>
+        <div className={`${prendido ? "bg-[#4d1616]" : "bg-[#211414]"} max-md:flex-col text-white flex items-center justify-center h-70 rounded-xl shadow-2xl shadow-zinc-950`}>
           <div className="grid grid-cols-3 gap-5 w-80 m-6">
             <button
               onClick={() => apretarQ()}
@@ -233,7 +233,7 @@ function App() {
               onChange={modificarVolumen}
             />
 
-            <div className="flex flex-col items-center mt-6">
+            <div className="flex flex-col items-center mt-6 max-md:mb-6">
               <p className="text-white font-bold">Bank</p>
               <button
                 onClick={() => cambiazo()}
